@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  padding: 0;
+  font-size: 15px;
+  height: 50px;
+  transition: all 0.5s;
+  background: rgba(darken($secondary, 15), .80);
+  z-index: 996;
+
+  &.topbar-transparent {
+    background: transparent;
+  }
+
+  &.topbar-scrolled {
+    top: -50px;
+  }
+
+  color: rgba($white, .7);
+
+  i {
+    color: $primary;
+    line-height: 0;
+    span {
+      color: #fff;
+      font-style: normal;
+      padding-left: 5px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  top: 50px;
+  height: 70px;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: rgba(darken($secondary, 15), .85);
+  
+  &.header-transparent {
+    background: transparent;
+  }
+
+  &.header-scrolled {
+    top: 0;
+    background: rgba(darken($secondary, 15), .85);
+  }
+
+  .logo {
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    h1 a, h1 a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Book a table button Menu
+--------------------------------------------------------------*/
+
+.book-a-table-btn {
+  background: $primary;
+  color: $white;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+  &:hover {
+    background: darken($primary, 8);
+    color: $white;
+  }
+
+  @media (max-width: 992px) {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
