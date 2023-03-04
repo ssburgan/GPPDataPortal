@@ -28,6 +28,20 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+    // Check the radio button value.
+    const radioButtons = document.querySelectorAll('input[name="model"]');
+    const selectedmodel = document.querySelector('#selectedmodel');
+
+    function check(model) {
+      var selectedmodel = document.getElementById("selectedmodel");
+      selectedmodel.innerHTML = "Selected " + model;
+    }
+  </script>
 </head>
 
 <body>
@@ -38,10 +52,6 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="data.html">CEDAR Data</a></li>
-          <li><a class="nav-link scrollto" href="GPPapp.html">GPP Data Portal</a></li>
-          <li><a class="nav-link scrollto" href="conclusion.html">Conclusion </a></li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
           <li class="dropdown"><a href="#"><span class="nav-link scrollto">Background</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
@@ -51,6 +61,10 @@
               <li><a class="nav-link scrollto" href="analysis.html">Analysis of GPP and NPP</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="data.html">CEDAR Data</a></li>
+          <li><a class="nav-link scrollto" href="GPPapp.html">GPP Data Portal</a></li>
+          <li><a class="nav-link scrollto" href="conclusion.html">Conclusion </a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -112,23 +126,6 @@
                 molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
               </p>
 
-              <style>
-                .grid-container {
-                  display: grid;
-                  gap: 3px 3px;
-                  grid-template-columns: auto auto auto;
-                  background-color: #94c045;
-                  padding: 3px;
-                }
-
-                .grid-item {
-                  background-color: rgba(255, 255, 255, 0.8);
-                  border: 1px solid rgba(225, 228, 223, 0.8);
-                  padding: 3px;
-
-                  text-align: center;
-                }
-              </style>
               <div class="container">
                 <div class="row">
                   <div class="col">
@@ -137,24 +134,30 @@
                     </p>
                   </div>
                 </div>
+
                 <div class="row align-items-start">
                   <div class="col">
-                    <input type="radio" name="model" value="cfeml"> Direct CFE by ML
+                    <input type="radio" name="model" class="model" value="cfeml" onclick="check(this.value)"> Direct CFE
+                    by ML
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" value="baseline"> Baseline No Direct CO2 effects (CFE)
+                    <input type="radio" name="model" class="model" value="baseline" onclick="check(this.value)">
+                    Baseline No Direct CO2 effects
+                    (CFE)
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" value="hybrid"> Direct CFE Biophysical Theory (Hybrid)
+                    <input type="radio" name="model" class="model" value="hybrid" onclick="check(this.value)"> Direct
+                    CFE Biophysical Theory
+                    (Hybrid)
                   </div>
                 </div>
                 <div class="row" style="padding-top:10px">
                   <div class="col">
-                    <select id="year" name="year">
+                    <select id="select-year" name="year">
                       <option>Select Year</option>
                       <option value="2001">2001</option>
                       <option value="2002">2002</option>
@@ -182,7 +185,8 @@
                 </div>
                 <div class="row" style="padding-top:10px">
                   <div class="col">
-                    <button id="download-button" type="button" class="btn"
+                    <p id="selectedmodel"></p>
+                    <button id="download-button" type="button" class="btn" disabled
                       style="background-color:#94c045;font-size: 13px;color: white;">Download Tiff</button>
                     <script src="assets/js/script.js"></script>
                   </div>
