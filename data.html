@@ -33,14 +33,7 @@
 
   <script type="text/javascript">
 
-    // Check the radio button value.
-    const radioButtons = document.querySelectorAll('input[name="model"]');
-    const selectedmodel = document.querySelector('#selectedmodel');
 
-    function check(model) {
-      var selectedmodel = document.getElementById("selectedmodel");
-      selectedmodel.innerHTML = "Selected " + model;
-    }
   </script>
 </head>
 
@@ -134,31 +127,36 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="row align-items-start">
-                  <div class="col">
-                    <input type="radio" name="model" class="model" value="cfeml" onclick="check(this.value)"> Direct CFE
-                    by ML
-                  </div>
-                </div>
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" class="model" value="baseline" onclick="check(this.value)">
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_BASE"
+                      onclick="modelselect(this.value)">
                     Baseline No Direct CO2 effects
                     (CFE)
                   </div>
                 </div>
+                <div class="row align-items-start">
+                  <div class="col">
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_ML"
+                      onclick="modelselect(this.value)">
+                    Direct CFE
+                    by ML
+                  </div>
+                </div>
+
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" class="model" value="hybrid" onclick="check(this.value)"> Direct
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_HYBRID"
+                      onclick="modelselect(this.value)">
+                    Direct
                     CFE Biophysical Theory
                     (Hybrid)
                   </div>
                 </div>
                 <div class="row" style="padding-top:10px">
                   <div class="col">
-                    <select id="select-year" name="year">
-                      <option>Select Year</option>
+                    <select id="select-year" name="year" onchange="selectyear(this.value)">
+                      <option value="">Select Year</option>
                       <option value="2001">2001</option>
                       <option value="2002">2002</option>
                       <option value="2003">2003</option>
@@ -186,7 +184,7 @@
                 <div class="row" style="padding-top:10px">
                   <div class="col">
                     <p id="selectedmodel"></p>
-                    <button id="download-button" type="button" class="btn"
+                    <button id="download-button" type="button" class="btn" disabled
                       style="background-color:#94c045;font-size: 13px;color: white;">Download Tiff</button>
                     <script src="assets/js/script.js"></script>
                   </div>
