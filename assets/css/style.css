@@ -648,48 +648,48 @@ section {
 }
 
 /*--------------------------------------------------------------
-# why-rise
+# summary
 --------------------------------------------------------------*/
-.why-rise {
+.summary {
   background: #fffaf3;
 }
 
-.why-rise .content {
+.summary .content {
   padding: 0 80px;
 }
 
-.why-rise .content h3 {
+.summary .content h3 {
   font-weight: 400;
   font-size: 34px;
   color: #5f5950;
 }
 
-.why-rise .content h4 {
+.summary .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-.why-rise .content p {
+.summary .content p {
   font-size: 15px;
   color: #848484;
 }
 
-.why-rise .content ul {
+.summary .content ul {
   list-style: none;
   padding: 0;
 }
 
-.why-rise .content ul li + li {
+.summary .content ul li + li {
   margin-top: 15px;
 }
 
-.why-rise .content ul li {
+.summary .content ul li {
   position: relative;
   padding-left: 26px;
 }
 
-.why-rise .content ul i {
+.summary .content ul i {
   font-size: 20px;
   color: #94c045;
   position: absolute;
@@ -697,11 +697,11 @@ section {
   top: 2px;
 }
 
-.why-rise .content p:last-child {
+.summary .content p:last-child {
   margin-bottom: 0;
 }
 
-.why-rise .video-box {
+.summary .video-box {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -709,7 +709,7 @@ section {
   position: relative;
 }
 
-.why-rise .play-btn {
+.summary .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#94c045 50%, rgba(255, 176, 59, 0.4) 52%);
@@ -721,7 +721,7 @@ section {
   overflow: hidden;
 }
 
-.why-rise .play-btn::after {
+.summary .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -736,7 +736,7 @@ section {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.why-rise .play-btn::before {
+.summary .play-btn::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -759,12 +759,12 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 
-.why-rise .play-btn:hover::after {
+.summary .play-btn:hover::after {
   border-left: 15px solid #94c045;
   transform: scale(20);
 }
 
-.why-rise .play-btn:hover::before {
+.summary .play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -783,19 +783,19 @@ section {
 }
 
 @media (max-width: 1024px) {
-  .why-rise .content,
-  .why-rise .accordion-list {
+  .summary .content,
+  .summary .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 992px) {
-  .why-rise .content {
+  .summary .content {
     padding-top: 30px;
   }
 
-  .why-rise .accordion-list {
+  .summary .accordion-list {
     padding-bottom: 30px;
   }
 }
@@ -822,6 +822,62 @@ section {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+.summary .summary-item {
+  color: #fff;
+}
+
+.summary .summary-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #94c045;
+}
+
+.summary .summary-item .price {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.summary .summary-item .price span {
+  border-bottom: 2px solid #94c045;
+}
+
+.summary .summary-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary .summary-item ul li {
+  padding-bottom: 10px;
+}
+
+.summary .summary-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #94c045;
+}
+
+.summary .summary-item p:last-child {
+  margin-bottom: 0;
+}
+
+.summary .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.summary .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(148, 192, 69, 0.5);
+  opacity: 1;
+}
+
+.summary .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #94c045;
 }
 
 /*--------------------------------------------------------------
@@ -1079,7 +1135,7 @@ section {
 # Climate
 --------------------------------------------------------------*/
 .climate {
-  background: url(../img/coffee/AdobeStock_135936808.jpeg) center center
+  background: url(../img/co2/AdobeStock_135936808.jpeg) center center
     no-repeat;
   background-size: cover;
   position: relative;
@@ -1171,16 +1227,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# CoffeeBelt
+# analyzegpp
 --------------------------------------------------------------*/
-.coffeebelt {
-  background: url(../img/coffee/AdobeStock_280470886.jpeg) center center
+.analyzegpp {
+  background: url(../img/co2/AdobeStock_399613214.jpeg) center center
     no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.coffeebelt::before {
+.analyzegpp::before {
   content: "";
   background-color: rgba(12, 11, 10, 0.8);
   position: absolute;
@@ -1190,78 +1246,78 @@ section {
   bottom: 0;
 }
 
-.coffeebelt .section-title h2 {
+.analyzegpp .section-title h2 {
   color: #fff;
 }
 
-.coffeebelt .container {
+.analyzegpp .container {
   position: relative;
 }
 
 @media (min-width: 1024px) {
-  .coffeebelt {
+  .analyzegpp {
     background-attachment: fixed;
   }
 }
 
-.coffeebelt .coffeebelt-carousel {
+.analyzegpp .analyzegpp-carousel {
   background: rgba(255, 255, 255, 0.08);
   padding: 30px;
 }
 
-.coffeebelt .coffeebelt-item {
+.analyzegpp .analyzegpp-item {
   color: #fff;
 }
 
-.coffeebelt .coffeebelt-item h3 {
+.analyzegpp .analyzegpp-item h3 {
   font-weight: 600;
   font-size: 26px;
   color: #94c045;
 }
 
-.coffeebelt .coffeebelt-item .price {
+.analyzegpp .analyzegpp-item .price {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.coffeebelt .coffeebelt-item .price span {
+.analyzegpp .analyzegpp-item .price span {
   border-bottom: 2px solid #94c045;
 }
 
-.coffeebelt .coffeebelt-item ul {
+.analyzegpp .analyzegpp-item ul {
   list-style: none;
   padding: 0;
 }
 
-.coffeebelt .coffeebelt-item ul li {
+.analyzegpp .analyzegpp-item ul li {
   padding-bottom: 10px;
 }
 
-.coffeebelt .coffeebelt-item ul i {
+.analyzegpp .analyzegpp-item ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #94c045;
 }
 
-.coffeebelt .coffeebelt-item p:last-child {
+.analyzegpp .analyzegpp-item p:last-child {
   margin-bottom: 0;
 }
 
-.coffeebelt .swiper-pagination {
+.analyzegpp .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.coffeebelt .swiper-pagination .swiper-pagination-bullet {
+.analyzegpp .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
-.coffeebelt .swiper-pagination .swiper-pagination-bullet-active {
+.analyzegpp .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #94c045;
 }
 
@@ -1269,7 +1325,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/coffee/AdobeStock_112755645.jpeg) center center
+  background: url(../img/co2/AdobeStock_112755645.jpeg) center center
     no-repeat;
   background-size: cover;
   position: relative;
@@ -1516,26 +1572,24 @@ section {
   transform: scale(1.1);
 }
 
-.coffeegrown {
-  background: url("../img/coffee/AdobeStock_103360523.jpeg") center center
+/* .coffeegrown {
+  background: url("../img/co2/AdobeStock_103360523.jpeg") center center
+    no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+} */
+
+
+.team {
+  background: url("../img/co2/canopyriver.jpg") center center
     no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
 }
 
-/*--------------------------------------------------------------
-# Chefs
---------------------------------------------------------------*/
-.chefs {
-  background: url("../img/coffee/AdobeStock_76274556.jpeg") center center
-    no-repeat;
-  background-size: cover;
-  padding: 60px 0;
-  position: relative;
-}
-
-.chefs::before {
+.team::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1546,22 +1600,22 @@ section {
   z-index: 9;
 }
 
-.chefs .container {
+.team .container {
   position: relative;
   z-index: 10;
 }
 
-.chefs .member {
+.team .member {
   text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
 
-.chefs .member .pic {
+.team .member .pic {
   overflow: hidden;
 }
 
-.chefs .member .member-info {
+.team .member .member-info {
   position: absolute;
   bottom: -60px;
   left: 20px;
@@ -1574,7 +1628,7 @@ section {
   transition: max-height 0.5s ease-in-out;
 }
 
-.chefs .member h4 {
+.team .member h4 {
   font-weight: 500;
   margin-bottom: 10px;
   font-size: 16px;
@@ -1584,7 +1638,7 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.chefs .member h4::after {
+.team .member h4::after {
   content: "";
   position: absolute;
   display: block;
@@ -1595,38 +1649,38 @@ section {
   left: calc(50% - 25px);
 }
 
-.chefs .member span {
+.team .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-.chefs .member .social {
+.team .member .social {
   margin-top: 15px;
 }
 
-.chefs .member .social a {
+.team .member .social a {
   transition: color 0.3s;
   color: #7a7368;
 }
 
-.chefs .member .social a:hover {
+.team .member .social a:hover {
   color: #94c045;
 }
 
-.chefs .member .social i {
+.team .member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
 
 @media (max-width: 992px) {
-  .chefs .member {
+  .team .member {
     margin-bottom: 110px;
   }
 }
 
 @media (min-width: 1024px) {
-  .chefs {
+  .team {
     background-attachment: fixed;
   }
 }
@@ -1634,7 +1688,7 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
+/* .testimonials {
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
@@ -1738,7 +1792,7 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
