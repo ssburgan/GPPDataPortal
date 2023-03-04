@@ -112,8 +112,82 @@
                 molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
               </p>
 
-              <button id="download-button" class="gpp-btn" style="border: none;">Download 2020 Tiff File</button>
-              <script src="assets/js/script.js"></script>
+              <style>
+                .grid-container {
+                  display: grid;
+                  gap: 3px 3px;
+                  grid-template-columns: auto auto auto;
+                  background-color: #94c045;
+                  padding: 3px;
+                }
+
+                .grid-item {
+                  background-color: rgba(255, 255, 255, 0.8);
+                  border: 1px solid rgba(225, 228, 223, 0.8);
+                  padding: 3px;
+
+                  text-align: center;
+                }
+              </style>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <p>
+                      <b>Select a model and year and click Download.</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col">
+                    <input type="radio" name="model" value="cfeml"> Direct CFE by ML
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input type="radio" name="model" value="baseline"> Baseline No Direct CO2 effects (CFE)
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input type="radio" name="model" value="hybrid"> Direct CFE Biophysical Theory (Hybrid)
+                  </div>
+                </div>
+                <div class="row" style="padding-top:10px">
+                  <div class="col">
+                    <select id="year" name="year">
+                      <option>Select Year</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
+                      <option value="2009">2009</option>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option>
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+
+                  </div>
+                </div>
+                <div class="row" style="padding-top:10px">
+                  <div class="col">
+                    <button id="download-button" type="button" class="btn"
+                      style="background-color:#94c045;font-size: 13px;color: white;">Download Tiff</button>
+                    <script src="assets/js/script.js"></script>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
