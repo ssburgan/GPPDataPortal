@@ -16,17 +16,14 @@ const selectedModel = document.querySelector( 'input[name="model"]:checked');
 downloadButton.addEventListener('click', () => {
 
   //Cedar collection
-  var uriBaseCedarCFE = 'gs://co2_app/GPP_CTE_ST_NT_BASE/COG/';
-  var uriBaseCedarML = 'gs://co2_app/GPP_CTE_ST_NT_ML/COG/';
-  var uriBaseCedarHYBRID = 'gs://co2_app/GPP_CTE_ST_NT_HYBRID/COG/';
-  var downloadUrl = 'https://storage.cloud.google.com/co2_app/MODEL/COG/gpp_cte_st_nt_ml_YEAR_cog.tif';
-
+  var downloadUrl = 'https://storage.cloud.google.com/co2_app/MODEL/COG/gpp_cte_st_nt_YEAR_cog.tif?authuser=0'
+ 
   var selectedYear = $("#select-year").val();
   var selectedModel = $('input[name="model"]:checked').val();
 
   downloadUrl = downloadUrl.replace("MODEL", selectedModel);
   downloadUrl = downloadUrl.replace("YEAR", selectedYear);
-  //const downloadUrl = 'https://storage.cloud.google.com/co2_app/GPP_CTE_ST_NT_ML/COG/gpp_cte_st_nt_ml_2020_cog.tif'; // replace with your signed URL
+
   const downloadAnchor = document.createElement('a');
   downloadAnchor.setAttribute('href', downloadUrl);
   //downloadAnchor.setAttribute('target', '_blank');
