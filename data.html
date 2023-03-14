@@ -28,11 +28,17 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/jquery.multiselect.css" rel="stylesheet">
+  <link href="assets/css/jquery.multiselect.filter.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
     integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
 
+  <script type="text/javascript" src="assets/js/jquery.multiselect.filter.js" />
+  <script type="text/javascript" src="assets/js/jquery.multiselect.js" />
+  <script type="text/javascript" src="assets/js/jszip.js" />
+  <script type="text/javascript" src="assets/js/jszip.min.js" />
+  <script type="text/javascript">
 
   </script>
 </head>
@@ -169,7 +175,34 @@
                       <option value="2019">2019</option>
                       <option value="2020">2020</option>
                     </select>
+                  </div>
+                </div>
+                <div class="row" style="padding-top:40px">
+                  <div class="col">
+                    Intended Use: *
+                    <select id="select-use" name="indendeduse">
+                      <option value="">Select Reason</option>
+                      <option value="Research">Research</option>
+                      <option value="Education">Education</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
 
+                <div class="row" style="padding-top:10px">
+                  <div class="col">
+                    <span>Description of Intended Use *</span>
+                    <span>(required)</span>
+                  </div>
+                  <textarea class="js-desc desc"
+                    placeholder="This intended-use statement will be emailed to the data producer(s)."></textarea>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input type="checkbox" id="ack">
+                    <label for="ack" class="clickable-label">I acknowledge that I have read and agree to
+                      the&nbsp;</label>
+                    <a href="" target="_blank">CEDAR 2023 Data Policy</a>
                   </div>
                 </div>
                 <div class="row" style="padding-top:10px">
