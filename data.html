@@ -126,16 +126,14 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_BASE"
-                      onclick="modelselect(this.value)">
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_BASE" onclick="modelselect()">
                     Baseline No Direct CO2 effects
                     (CFE)
                   </div>
                 </div>
                 <div class="row align-items-start">
                   <div class="col">
-                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_ML"
-                      onclick="modelselect(this.value)">
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_ML" onclick="modelselect()">
                     Direct CFE
                     by ML
                   </div>
@@ -143,8 +141,7 @@
 
                 <div class="row">
                   <div class="col">
-                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_HYBRID"
-                      onclick="modelselect(this.value)">
+                    <input type="radio" name="model" class="model" value="GPP_CTE_ST_NT_HYBRID" onclick="modelselect()">
                     Direct
                     CFE Biophysical Theory
                     (Hybrid)
@@ -152,7 +149,7 @@
                 </div>
                 <div class="row" style="padding-top:10px">
                   <div class="col">
-                    <select id="select-year" name="year" onchange="selectyear(this.value)">
+                    <select id="select-year" name="year" onchange="selectyear()">
                       <option value="">Select Year</option>
                       <option value="2001">2001</option>
                       <option value="2002">2002</option>
@@ -180,7 +177,7 @@
                 <div class="row" style="padding-top:40px">
                   <div class="col">
                     Intended Use: *
-                    <select id="select-use" name="indendeduse">
+                    <select id="select-use" name="indendeduse" onchange="selectuse()">
                       <option value="">Select Reason</option>
                       <option value="Research">Research</option>
                       <option value="Education">Education</option>
@@ -194,12 +191,13 @@
                     <span>Description of Intended Use *</span>
                     <span>(required)</span>
                   </div>
-                  <textarea class="js-desc desc"
-                    placeholder="This intended-use statement will be emailed to the data producer(s)."></textarea>
+                  <textarea class="js-desc desc" id="textarea-use"
+                    placeholder="This intended-use statement will be emailed to the data producer(s)."
+                    onchange="reviewuse()"></textarea>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <input type="checkbox" id="ack">
+                    <input type="checkbox" id="ack" onclick="checkack()">
                     <label for="ack" class="clickable-label">I acknowledge that I have read and agree to
                       the&nbsp;</label>
                     <a href="" target="_blank">CEDAR 2023 Data Policy</a>

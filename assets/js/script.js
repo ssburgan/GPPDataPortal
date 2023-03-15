@@ -31,21 +31,55 @@ downloadButton.addEventListener('click', () => {
   downloadAnchor.click();
 });
 
-    // Check the radio button value.
-    function modelselect(model) {
-      var selectedYear = $("#select-year").val();
-      if (selectedYear != "" && model != "") {
-        $("#download-button").prop("disabled", false);
-      } else {
-        $("#download-button").prop("disabled", true);
-      }
-    }
+function enableDownload(){
+  var selectedModel = $('input[name="model"]:checked').val();
+  var selectedYear = $("#select-year").val();
+  var selectedUse = $("#select-use").val();
+  var textUsage = $("#textarea-use").val();
+  var checkAck = $("#ack").prop('checked');
+  return selectedYear != "" && selectedModel != "" && selectedUse != "" && textUsage != "" &&  checkAck
+}
 
-    function selectyear(year) {
-      var selectedYear = $("#select-year").val();
-      if (selectedYear != "" && year != "") {
-        $("#download-button").prop("disabled", false);
-      } else {
-        $("#download-button").prop("disabled", true);
-      }
-    }
+// Check the radio button value.
+function modelselect() {
+
+  if (enableDownload()) {
+    $("#download-button").prop("disabled", false);
+  } else {
+    $("#download-button").prop("disabled", true);
+  }
+}
+
+function selectyear() {
+  if (enableDownload()) {
+    $("#download-button").prop("disabled", false);
+  } else {
+    $("#download-button").prop("disabled", true);
+  }
+}
+
+function selectuse() {
+  if (enableDownload()) {
+    $("#download-button").prop("disabled", false);
+  } else {
+    $("#download-button").prop("disabled", true);
+  }
+}
+
+function reviewuse() {
+  if (enableDownload()) {
+    $("#download-button").prop("disabled", false);
+  } else {
+    $("#download-button").prop("disabled", true);
+  }
+}
+
+function checkack() {
+  if (enableDownload()) {
+    $("#download-button").prop("disabled", false);
+  } else {
+    $("#download-button").prop("disabled", true);
+  }
+}
+
+
