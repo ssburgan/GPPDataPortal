@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block title %}
+Carbon Cycle
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Understanding the Global Carbon Cycle</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>GPP</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <!-- Section start-->
+  <section class="summary">
+    <div class="container-fluid">
+
+      <div class="row">
+
+
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2>Understanding the <span>Global Carbon Cycle</span>
+              </h2>
+            </div>
+            <p>Add sections for <br>
+              Overview<br>
+              Importance of understanding carbon cycle<br>
+              Factors that influence the global carbon cycle<br>
+              Different types of carbon sinks<br>
+              Importance of carbon sinks<br>
+
+
+            </p>
+            <p>
+              Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
+              nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
+              laoreet. Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
+              varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
+              convallis, feugiat mi id, tincidunt nisl.
+            </p>
+            <p>
+              Etiam augue eros, fringilla non diam eu, hendrerit consectetur enim. Mauris eleifend orci a volutpat
+              molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-5 align-items-stretch video-box"
+          style='background-image: url("../static/assets/img/co2/AdobeStock_243942975.jpeg");'>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</main><!-- End #main -->
+{% endblock %}

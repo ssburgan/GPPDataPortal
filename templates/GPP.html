@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block title %}
+Gross Primary Productivity (GPP)
+{% endblock %}
+{% block content %}
+<main id="main">
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>What is GPP?</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>GPP</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <!-- Section start-->
+  <section class="summary">
+    <div class="container-fluid">
+
+      <div class="row">
+
+
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2>What is <span>GPP</span>?
+              </h2>
+            </div>
+            <p>
+              Gross Primary Productivity (GPP) is the rate at which photosynthetic organisms (such as plants, algae,
+              and some bacteria) convert carbon dioxide (CO2) and water (H2O) into organic matter through
+              photosynthesis. It represents the total amount of carbon fixed by the plant in a given period of time,
+              typically expressed in units of mass per unit area per unit time (e.g. grams of carbon per square meter
+              per day).
+            </p>
+            <p>
+              GPP plays a significant role in the global carbon cycle, as photosynthetic organisms remove carbon
+              dioxide from the atmosphere and store it as organic matter. GPP is a modeled metric which is estimated
+              by applying multiple methodologies - most recently machine learning - to remote sensing data from
+              satellites and eddy covariance data from flux towers.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-5 align-items-stretch video-box"
+          style='background-image: url("../static/assets/img/co2/AdobeStock_243942975.jpeg");'>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</main><!-- End #main -->
+{% endblock %}

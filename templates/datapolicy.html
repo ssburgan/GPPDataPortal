@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block title %}
+Data Policy
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>CEDAR Data</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>CEDAR Data</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <!-- Section start-->
+  <section class="summary">
+    <div class="container-fluid">
+
+      <div class="row">
+
+
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2>CEDAR <span>Data Policy</span>
+              </h2>
+            </div>
+            <div class="row">
+              <div>
+                <p>The TBD Dataset and its data policy are designed to TBD. All studies should acknowledge TBD.
+                </p>
+                <p>When data are downloaded, data users are asked to describe the intended use for the data when they
+                  fill out the data-download form; this intended-use statement will be emailed to the data
+                  producer(s).
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor imperdiet nunc quis
+                  convallis. Phasellus justo tortor, auctor a sagittis et, tristique sed ipsum. Pellentesque a augue
+                  pellentesque enim tincidunt consectetur. Morbi sed sapien ac nisl facilisis euismod. Ut lacinia
+                  consequat mi, vel scelerisque orci bibendum at. Nam consequat ligula mi, eu cursus purus fringilla
+                  nec. Sed vestibulum tincidunt nibh eget tempor. Integer egestas eros non lacus tincidunt, sed
+                  dapibus velit imperdiet. Praesent ullamcorper in metus at laoreet.
+                </p>
+                <p>Data use should follow these attribution guidelines:</p>
+
+                <p>It is recommended that data users inform data providers of forthcoming publications using their
+                  data (email list is provided with data download) and cite individual sites’ DOIs for data used when
+                  feasible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-5 align-items-stretch video-box"
+          style='background-image: url("../static/assets/img/co2/AdobeStock_370102882.jpeg");'>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</main><!-- End #main -->
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block title %}
+NEE
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>What is Net Ecosystem Exchange (NEE)?</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>NEE</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <section class="summary">
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-lg-5 align-items-stretch video-box"
+          style='background-image: url("../static/assets/img/co2/Holly-on-tower_2.jpg");'>
+        </div>
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2>What is <span>Net Ecosystem Exchange (NEE)</span>?</h2>
+            </div>
+            <p>Net Ecosystem Exchange (NEE) is the balance between the Gross Primary Productivity (GPP) of an
+              ecosystem and its ecosystem respiration (ER). It represents the net amount of carbon dioxide (CO2) that
+              is either absorbed or released by the ecosystem over a given period of time. NEE is expressed in units
+              of mass per unit area per unit time (e.g. grams of carbon per square meter per day).
+
+            </p>
+            <p>
+              If NEE is negative, it means that the ecosystem is absorbing more CO2 than it is releasing through
+              respiration, and is therefore a carbon sink. This is the case for many forests and other ecosystems with
+              high levels of photosynthesis. If NEE is positive, it means that the ecosystem is releasing more CO2
+              than it is absorbing, and is therefore a carbon source. This is the case for many agricultural and urban
+              ecosystems, as well as disturbed or degraded ecosystems with lower levels of photosynthesis.
+            </p>
+            <p>
+              NEE is an important metric for understanding the carbon balance of ecosystems and their contribution to
+              the global carbon cycle. It is primarily measured using eddy covariance tracked by flux towers.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End investigation-processing Section -->
+
+  <section class="inner-page">
+    <div class="container">
+    </div>
+  </section>
+
+</main><!-- End #main -->
+{% endblock %}

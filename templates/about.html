@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+{% block title %}
+About
+{% endblock %}
+{% block content %}
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>About</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>About</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+  <!-- ======= team Section ======= -->
+  <section id="team" class="team">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our <span>Team</span></h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/Alex.png')}}" class="img-fluid"
+                alt=""></div>
+            <div class="member-info">
+              <h4>Alex Carite</h4>
+              <span>Mountain View, CA</span>
+              <span><a href="mailto:alex.carite@ischool.berkeley.edu">alex.carite@ischool.berkeley.edu</a></span>
+              <div class="social">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/Oscar.jpg')}}" class="img-fluid"
+                alt=""></div>
+            <div class="member-info">
+              <h4>Oscar Linares</h4>
+              <span>San Francisco, CA</span>
+              <span><a href="mailto:oscar.linares@ischool.berkeley.edu">oscar.linares@ischool.berkeley.edu</a></span>
+              <div class="social">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/Sybil.jpg')}}" class="img-fluid"
+                alt=""></div>
+            <div class="member-info">
+              <h4>Sybil Santos-Burgan</h4>
+              <span>Chicago, IL USA</span>
+              <span><a href="mailto:sybilsantosburgan@berkeley.edu">sybilsantosburgan@berkeley.edu</a></span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/sybil-santos-burgan/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End team Section -->
+  <section class="usability">
+    <div class="container">
+      <div class="section-title">
+        <h2>Usability Study</h2>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi.</p>
+      </div>
+      <div class="row">
+        <table style="border: 1px solid black;
+              border-radius: 10px;">
+          <tr style="border: 2px solid black;
+              border-radius: 10px;">
+            <th>
+              <p style="text-align:center; padding: 5px;">Priority</p>
+            </th>
+            <th>
+              <p style="text-align:center;">Activities</p>
+            </th>
+            <th>
+              <p style="text-align:center;">Status</p>
+            </th>
+          </tr>
+          <tr style="border: 1px solid black;
+              border-radius: 10px;">
+            <td>
+              <p style="color:green; padding: 30px;"><b>Must Have</b></p>
+            </td>
+            <td>
+              <p>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+              </p>
+            </td>
+            <td>
+              <p style="color:green; padding: 30px">Completed</p>
+            </td>
+          </tr>
+          <tr style="border: 1px solid black;
+              border-radius: 10px;">
+            <td>
+              <p style="color:goldenrod; padding: 30px;"><b>Should Have</b></p>
+            </td>
+            <td>
+              <p>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+                <li>Some item</li>
+              </p>
+            </td>
+            <td>
+              <p style="color:green; padding: 30px">Completed</p>
+            </td>
+          </tr>
+          <tr style="border: 1px solid black;
+              border-radius: 10px;">
+            <td>
+              <p style="color:darkorange; padding: 30px;"><b>Could Have</b></p>
+            </td>
+            <td>
+              <p>
+                <li>Some item</li>
+                <li>Some item</li>
+              </p>
+            </td>
+            <td>
+              <p style="color:green; padding: 30px">Completed</p>
+            </td>
+          </tr>
+          <tr style="border: 1px solid black;
+              border-radius: 10px;">
+            <td>
+              <p style="color:indianred; padding: 30px;"><b>Nice to Have</b></p>
+            </td>
+            <td>
+              <p>
+                <li>Some item</li>
+              </p>
+            </td>
+            <td>
+              <p style="color:red; padding: 30px">Not Started</p>
+            </td>
+
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="technology">
+    <div class="container">
+      <div class="section-title">
+        <h2>Technology</h2>
+      </div>
+      <div class="row">
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+          autem.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="Reference">
+    <div class="container">
+      <div class="section-title">
+        <h2>References</h2>
+        <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+            autem.</p> -->
+      </div>
+      <div class="row">
+        <ul>
+          <p>
+            <li>Ref 1</li>
+          </p>
+          <p>
+            <li>Ref 2
+            </li>
+          </p>
+          <p>
+            <li> Ref 3
+            </li>
+          </p>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main><!-- End #main -->
+{% endblock %}
