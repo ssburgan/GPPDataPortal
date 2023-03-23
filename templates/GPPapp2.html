@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}
+GPP App
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>GPP Data Portal</h2>
+        <ol>
+          <li><a href="{{ url_for('home')}}">Home</a></li>
+          <li>GPP Data Portal</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Breadcrumbs Section -->
+
+  <!-- Section start-->
+  <section class="summary">
+    <div class="container-fluid">
+
+      <div class="row">
+
+
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+
+
+            <div id="map-container">
+              <body>
+                {{map|safe}}
+              </body>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Section -->
+</main><!-- End #main -->
+{% endblock %}
