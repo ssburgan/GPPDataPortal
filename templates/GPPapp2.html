@@ -29,14 +29,17 @@ GPP App
 
 
 
-        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-stretch">
 
           <div class="content">
 
 
             <div id="map-container">
               <body>
-                {{map|safe}}
+                <!-- {{map|safe}} -->
+                <div id="iframe-container">
+                  <iframe src="https://sybilsantosburgan.users.earthengine.app/view/modis-gpp"></iframe>
+                </div>
               </body>
             </div>
 

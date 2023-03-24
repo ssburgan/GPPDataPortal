@@ -58,8 +58,9 @@ def GPPapp():
 
 @app.route("/GPPapp2/")
 def GPPapp2():
-    map = folium.Map(location=[37.422, -122.084], zoom_start=12)
-    return render_template("GPPapp2.html", map=map._repr_html_())
+    return render_template("GPPapp2.html")
+    # map = folium.Map(location=[37.422, -122.084], zoom_start=12)
+    # return render_template("GPPapp2.html", map=map._repr_html_())
 
 
 @app.route("/NEE/")
