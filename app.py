@@ -1,7 +1,8 @@
 import re
 from datetime import datetime
 from flask import Flask, render_template
-import folium
+
+# import folium
 
 
 app = Flask(__name__)
@@ -56,6 +57,7 @@ def GPP():
 def GPPapp():
     return render_template("GPPapp.html")
 
+
 @app.route("/GPPapp2/")
 def GPPapp2():
     return render_template("GPPapp2.html")
@@ -80,15 +82,3 @@ def get_data():
 
 if __name__ == "__main__":
     app.run()
-
-
-# from flask import Flask, render_template
-# app = Flask(__name__)
-
-# @app.route("/")
-# def flaskapp():
-#     file="about9.jpg"
-#     return render_template("flaskapp.html",file=file)
-
-# if __name__ == "__main__":
-#     app.run()

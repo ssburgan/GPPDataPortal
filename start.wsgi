@@ -8,4 +8,4 @@ with open(activate_this) as file_:
 
 sys.path.append(PROJECT_DIR)
 
-from flaskapp import app as application
+from app import app as application

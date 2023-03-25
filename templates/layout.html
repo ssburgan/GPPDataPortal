@@ -28,6 +28,13 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/css/gee.css')}}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='assets/js/jquery-3.6.4.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.min.js')}}"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +59,6 @@
                     </li>
                     <li><a class="nav-link scrollto" href="{{ url_for('data') }}">CEDAR Data</a></li>
                     <li><a class="nav-link scrollto" href="{{ url_for('GPPapp') }}">GPP Data Portal</a></li>
-                    <li><a class="nav-link scrollto" href="{{ url_for('GPPapp2') }}">GPP Data Portal2</a></li>
                     <li><a class="nav-link scrollto" href="{{ url_for('conclusion') }}">Conclusion </a></li>
                     <li><a class="nav-link scrollto" href="{{ url_for('about') }}">About</a></li>
                 </ul>
@@ -86,7 +92,10 @@
 
     <!-- Template Main JS File -->
     <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
-
+    <script src="{{ url_for('static', filename='assets/js/script.js')}}"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <!-- <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"> -->
 </body>
 
 </html>

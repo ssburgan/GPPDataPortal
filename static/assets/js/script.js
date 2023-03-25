@@ -11,7 +11,6 @@ const downloadButton = document.getElementById('download-button');
 const selectYear = document.getElementById('select-year');
 const selectedModel = document.querySelector( 'input[name="model"]:checked');   
 
-
 //downloadButton.addEventListener('click', disableButton);
 downloadButton.addEventListener('click', () => {
 
