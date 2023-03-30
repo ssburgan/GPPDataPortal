@@ -10,10 +10,10 @@ Conclusion
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Conclusion</h2>
+        <h2>Key Findings</h2>
         <ol>
           <li><a href="{{ url_for('home')}}">Home</a></li>
-          <li>Conclusion</li>
+          <li>Key Findings</li>
         </ol>
       </div>
 
@@ -27,7 +27,7 @@ Conclusion
       <div class="row">
 
         <div class="col-lg-5 align-items-stretch video-box"
-          style='background-image: url("../static/assets/img/co2/AdobeStock_243942975.jpeg");'>
+          style='background-image: url("../static/assets/img/co2/Holly-on-tower_2.jpg");'>
         </div>
 
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
@@ -36,17 +36,12 @@ Conclusion
             <div class="section-title">
               <h2><span>Future direction and challenges, Conclusion</span></h2>
             </div>
-            <p>Add sections for <br>
-
-
+            <p>Write about the story being that Modis is not a direct observation on GPP and there is a missing key
+              element in their estimation (Direct CO2 effects with fertilization) which is why the team built these
+              models. We need to help highlight these key differences in MODIS vs other methods and show that there is
+              not agreement between the two and there is a need for more research/funding
             </p>
-            <p>
-              Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
-              nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
-              laoreet. Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
-              varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
-              convallis, feugiat mi id, tincidunt nisl.
-            </p>
+
             <p>
               Etiam augue eros, fringilla non diam eu, hendrerit consectetur enim. Mauris eleifend orci a volutpat
               molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
@@ -62,10 +57,58 @@ Conclusion
   </section>
   <!-- End investigation-processing Section -->
 
-  <section class="inner-page">
+  <!-- ======= Call to Action ======= -->
+  <section id="study-gpp" class="analyzegpp">
     <div class="container">
+
+      <div class="section-title">
+        <h2>Call to <span>Action</span></h2>
+      </div>
+
+      <div class="events-slider swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="row analyzegpp-item">
+              <div class="col-lg-6">
+                <img src="../static/assets/img/co2/AdobeStock_243942975.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Integer mollis eros nisi</h3>
+                <p>
+                  Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
+                  nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
+                  laoreet. Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
+                  varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
+                  convallis, feugiat mi id, tincidunt nisl.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-autoplay="10000">
+            <div class="row analyzegpp-item">
+              <div class="col-lg-6">
+                <img src="../static/assets/img/co2/canopyriver.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Donec vitae lectus blandit</h3>
+                <p>
+                  Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
+                  nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
+                  laoreet. Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
+                  varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
+                  convallis, feugiat mi id, tincidunt nisl.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
     </div>
-  </section>
+  </section><!-- End Analyze Section -->
 
 </main><!-- End #main -->
 {% endblock %}
