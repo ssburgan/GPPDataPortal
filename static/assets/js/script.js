@@ -1,9 +1,3 @@
-// function redirectToGoogle() {
-//     window.location.href = "https://www.google.com";
-//   }
-  
-// var googleButton = document.getElementById("google-button");
-// googleButton.onclick = redirectToGoogle;
 
 
 
@@ -11,17 +5,22 @@ const downloadButton = document.getElementById('download-button');
 const selectYear = document.getElementById('select-year');
 const selectedModel = document.querySelector( 'input[name="model"]:checked');   
 
-//downloadButton.addEventListener('click', disableButton);
 downloadButton.addEventListener('click', () => {
 
   //Cedar collection
-  var downloadUrl = 'https://storage.cloud.google.com/co2_app/MODEL/COG/gpp_cte_st_nt_YEAR_cog.tif?authuser=0'
- 
-  var selectedYear = $("#select-year").val();
+  var downloadUrl;
+  var baseUrl = 'https://storage.googleapis.com/co2_app/GPP_CTE_ST_NT_BASE/GPP_CTE_ST_NT_BASE.zip?authuser=0'
+  var hybridUrl = 'https://storage.googleapis.com/co2_app/GPP_CTE_ST_NT_HYBRID/GPP_CTE_ST_NT_HYBRID.zip?authuser=0'
+  var mlUrl = 'https://storage.googleapis.com/co2_app/GPP_CTE_ST_NT_ML/GPP_CTE_ST_NT_ML.zip?authuser=0'
+  
   var selectedModel = $('input[name="model"]:checked').val();
+  downloadUrl = baseUrl;
+  if(selectedModel =='GPP_CTE_ST_NT_ML'){
+    downloadUrl = mlUrl;
+  } else if(selectedModel =='GPP_CTE_ST_NT_HYBRID'){
+    downloadUrl = hybridUrl;
+  } 
 
-  downloadUrl = downloadUrl.replace("MODEL", selectedModel);
-  downloadUrl = downloadUrl.replace("YEAR", selectedYear);
 
   const downloadAnchor = document.createElement('a');
   downloadAnchor.setAttribute('href', downloadUrl);
@@ -42,14 +41,6 @@ function enableDownload(){
 // Check the radio button value.
 function modelselect() {
 
-  if (enableDownload()) {
-    $("#download-button").prop("disabled", false);
-  } else {
-    $("#download-button").prop("disabled", true);
-  }
-}
-
-function selectyear() {
   if (enableDownload()) {
     $("#download-button").prop("disabled", false);
   } else {

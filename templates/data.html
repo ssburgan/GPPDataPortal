@@ -24,19 +24,14 @@ Cedar Data
   <!-- Section start-->
   <section class="summary">
     <div class="container-fluid">
-
       <div class="row">
-
-
-
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
           <div class="content">
             <div class="section-title">
-              <h2>CEDAR <span>Data</span>
+              <h2><span>CEDAR</span> Data
               </h2>
             </div>
-            <p>The Cedar datasets were generated using novel methods of carbon upscaling using Fluxnet towers and
+            <p>The CEDAR datasets were generated using novel methods of carbon upscaling using Fluxnet towers and
               computational upscaling. This work has been created by Yanghui Kang, Phd, a member of the UC Berkeley
               <a href="https://www.keenangroup.info/" target="_blank"><span>Keenan Group</span></a>, and is meant to
               further the study of GPP modeling. The data models used in this project stem
@@ -49,12 +44,16 @@ Cedar Data
               Modis Land Cover, and Koppen climate zones. The data comes in 2 temporal ranges, 3 CFE scenarios, and 2
               GPP partitions, all with a spatial resolution of 0.05 degrees.
             </p>
+            <div style="padding-top:10px;padding-bottom: 10px;">
+              <h4>Download <span style="color:#94c045;">CEDAR</span> Data</h4>
+              <p>
+                Downloaded zip files include image/tiff files from 2001-2020.
+              </p>
+            </div>
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <p>
-                    <b>Select a model and year and click Download.</b>
-                  </p>
+                  <span style="font-weight: bold;">Select dataset type:</span>
                 </div>
               </div>
               <div class="row">
@@ -80,53 +79,31 @@ Cedar Data
                   (Hybrid)
                 </div>
               </div>
-              <div class="row" style="padding-top:10px">
-                <div class="col">
-                  <select id="select-year" name="year" onchange="selectyear()">
-                    <option value="">Select Year</option>
-                    <option value="2001">2001</option>
-                    <option value="2002">2002</option>
-                    <option value="2003">2003</option>
-                    <option value="2004">2004</option>
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                  </select>
-                </div>
-              </div>
               <div class="row" style="padding-top:40px">
                 <div class="col">
-                  Intended Use: *
+                  <span style="font-weight: bold;">Intended Use: *</span>
                   <select id="select-use" name="indendeduse" onchange="selectuse()">
                     <option value="">Select Reason</option>
                     <option value="Research">Research</option>
                     <option value="Education">Education</option>
                     <option value="Other">Other</option>
-                  </select>
+                  </select><span> (required)</span>
                 </div>
               </div>
 
               <div class="row" style="padding-top:10px">
                 <div class="col">
-                  <span>Description of Intended Use *</span>
+                  <span style="font-weight: bold;">Description of Intended Use *</span>
                   <span>(required)</span>
                 </div>
-                <textarea class="js-desc desc" id="textarea-use"
-                  placeholder="This intended-use statement will be emailed to the data producer(s)." on
-                  onchange="reviewuse()"></textarea>
+
+              </div>
+              <div class="row">
+                <div class="col">
+                  <textarea class="js-desc desc" id="textarea-use" style="width:75%"
+                    placeholder="This intended-use statement will be emailed to the data producer(s)."
+                    onchange="reviewuse()"></textarea>
+                </div>
               </div>
 
 
@@ -150,8 +127,8 @@ Cedar Data
           </div>
 
         </div>
-        <div class="col-lg-5 align-items-stretch video-box"
-          style='background-image: url("../static/assets/img/co2/AdobeStock_370102882.jpeg");'>
+        <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch">
+          <img src="../static/assets/img/co2/CEDAR_production_description.png" alt="Upscaling Workflow">
         </div>
       </div>
 
