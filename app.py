@@ -1,11 +1,52 @@
 import re
 from datetime import datetime
-from flask import Flask, render_template
+from flask import Flask, jsonify, render_template, request
 
-# import folium
+import ee
+import json
 
+# from fastapi import FastAPI, Request, HTTPException
+# from fastapi.middleware.wsgi import WSGIMiddleware
+# import uvicorn
 
 app = Flask(__name__)
+
+# app = FastAPI()
+# flaskapp = Flask(__name__)
+# Mount Flask on Fastapi
+# app.mount("/CarbonTrack", WSGIMiddleware(flaskapp))
+
+
+@app.get("/api/hello")
+def hello(name: str):
+    return {"message": f"Hello {name}"}
+
+
+incomes = [{"description": "salary", "amount": 5000}]
+
+
+@app.route("/api/incomes")
+def get_incomes():
+    return jsonify(incomes)
+
+
+@app.route("/api/incomes", methods=["POST"])
+def add_income():
+    incomes.append(request.get_json())
+    return "", 204
+
+
+# @app.get("/api/hello")
+# def hello(name: str):
+#     return {"message": f"Hello {name}"}
+
+
+# @app.get("/api")
+@app.get("/api")
+def root():
+    # 501 Not Implemented server error. Server does not support the functionality required to fulfill the request.
+    # raise HTTPException(status_code=501, detail="Not Implemented")
+    return {"text": "Fast API"}
 
 
 @app.route("/")
@@ -58,27 +99,23 @@ def GPPapp():
     return render_template("GPPapp.html")
 
 
-@app.route("/GPPapp2/")
-def GPPapp2():
-    return render_template("GPPapp2.html")
-    # map = folium.Map(location=[37.422, -122.084], zoom_start=12)
-    # return render_template("GPPapp2.html", map=map._repr_html_())
-
-
 @app.route("/NEE/")
 def NEE():
     return render_template("NEE.html")
 
 
-@app.route("/hello/<name>")
-def hello_there(name=None):
-    return render_template("hello_there.html", name=name, date=datetime.now())
+# @app.route("/hello/<name>")
+# def hello_there(name=None):
+#     return render_template("hello_there.html", name=name, date=datetime.now())
 
 
-@app.route("/api/data")
-def get_data():
-    return app.send_static_file("json/test.json")
+# @app.route("/api/data")
+# def get_data():
+#     return app.send_static_file("json/test.json")
 
 
 if __name__ == "__main__":
     app.run()
+
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=8000)
