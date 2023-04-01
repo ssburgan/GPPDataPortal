@@ -1,7 +1,6 @@
 import re
 from datetime import datetime
 from flask import Flask, jsonify, render_template, request
-
 import ee
 import json
 
