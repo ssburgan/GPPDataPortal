@@ -1,7 +1,8 @@
 import re
 from datetime import datetime
 from flask import Flask, jsonify, render_template, request
-import ee
+
+# import ee
 import json
 
 # from fastapi import FastAPI, Request, HTTPException
@@ -107,11 +108,9 @@ def NEE():
 # def hello_there(name=None):
 #     return render_template("hello_there.html", name=name, date=datetime.now())
 
-
 # @app.route("/api/data")
 # def get_data():
 #     return app.send_static_file("json/test.json")
-
 
 if __name__ == "__main__":
     app.run()

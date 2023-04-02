@@ -1,9 +1,3 @@
-/**
-* Template Name: Delicious - v4.9.1
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -181,15 +175,17 @@ a:hover {
 
 .navbar a,
 .navbar a:focus {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 24px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
   white-space: nowrap;
   transition: 0.3s;
+
 }
 
 .navbar a i,
@@ -204,6 +200,7 @@ a:hover {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: #94c045;
+  text-decoration: none;
 }
 
 .navbar .dropdown ul {
@@ -921,308 +918,6 @@ section {
 .analyzegpp .box:hover h4,
 .analyzegpp.box:hover p {
   color: #fff;
-}
-
-/*--------------------------------------------------------------
-# what-beans Section
---------------------------------------------------------------*/
-.what-beans #what-beans-flters {
-  padding: 0;
-  margin: 0 auto 0 auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-}
-
-.what-beans #what-beans-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  color: #444444;
-  margin: 0 3px 10px 3px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  border: 2px solid #94c045;
-  border-radius: 50px;
-}
-
-.what-beans #what-beans-flters li:hover,
-.what-beans #what-beans-flters li.filter-active {
-  color: #fff;
-  background: #94c045;
-}
-
-.what-beans #what-beans-flters li:last-child {
-  margin-right: 0;
-}
-
-.what-beans .what-beans-content {
-  margin-top: 30px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.what-beans .what-beans-content::after {
-  content: "......................................................................"
-    "...................................................................."
-    "....................................................................";
-  position: absolute;
-  left: 20px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #dad8d4;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.what-beans .what-beans-content a {
-  padding-right: 10px;
-  background: #fff;
-  position: relative;
-  z-index: 3;
-  font-weight: 700;
-  color: #ff9b08;
-}
-
-.what-beans .what-beans-content span {
-  background: #fff;
-  position: relative;
-  z-index: 3;
-  padding: 0 10px;
-  font-weight: 600;
-}
-
-.what-beans .what-beans-ingredients {
-  font-style: italic;
-  font-size: 14px;
-  font-family: "Comic Neue", sans-serif;
-  color: #948c81;
-}
-
-/*--------------------------------------------------------------
-# how-production
---------------------------------------------------------------*/
-.how-production {
-  overflow: hidden;
-}
-
-.how-production .nav-tabs {
-  border: 0;
-}
-
-.how-production .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: #433f39;
-  border-radius: 0;
-  border-right: 2px solid #e8e7e4;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.how-production .nav-link:hover {
-  color: #94c045;
-}
-
-.how-production .nav-link.active {
-  color: #94c045;
-  border-color: #94c045;
-}
-
-.how-production .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.how-production .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #433f39;
-}
-
-.how-production .details p {
-  color: #777777;
-}
-
-.how-production .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .how-production .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .how-production .nav-link.active {
-    color: #fff;
-    background: #94c045;
-  }
-}
-
-/*--------------------------------------------------------------
-# evaluate
---------------------------------------------------------------*/
-.evaluate {
-  overflow: hidden;
-}
-
-.evaluate .nav-tabs {
-  border: 0;
-}
-
-.evaluate .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: #433f39;
-  border-radius: 0;
-  border-right: 2px solid #e8e7e4;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.evaluate .nav-link:hover {
-  color: #94c045;
-}
-
-.evaluate .nav-link.active {
-  color: #94c045;
-  border-color: #94c045;
-}
-
-.evaluate .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.evaluate .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #433f39;
-}
-
-.evaluate .details p {
-  color: #777777;
-}
-
-.evaluate .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .evaluate .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .evaluate .nav-link.active {
-    color: #fff;
-    background: #94c045;
-  }
-}
-
-/*--------------------------------------------------------------
-# Climate
---------------------------------------------------------------*/
-.climate {
-  background: url(../img/co2/AdobeStock_135936808.jpeg) center center
-    no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.climate::before {
-  content: "";
-  background-color: rgba(12, 11, 10, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.climate .section-title h2 {
-  color: #fff;
-}
-
-.climate .container {
-  position: relative;
-}
-
-@media (min-width: 1024px) {
-  .climate {
-    background-attachment: fixed;
-  }
-}
-
-.climate .climate-carousel {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
-}
-
-.climate .climate-item {
-  color: #fff;
-}
-
-.climate .climate-item h3 {
-  font-weight: 600;
-  font-size: 26px;
-  color: #94c045;
-}
-
-.climate .climate-item .price {
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.climate .climate-item .price span {
-  border-bottom: 2px solid #94c045;
-}
-
-.climate .climate-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.climate .climate-item ul li {
-  padding-bottom: 10px;
-}
-
-.climate .climate-item ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #94c045;
-}
-
-.climate .climate-item p:last-child {
-  margin-bottom: 0;
-}
-
-.climate .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.climate .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 1;
-}
-
-.climate .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #94c045;
 }
 
 /*--------------------------------------------------------------
