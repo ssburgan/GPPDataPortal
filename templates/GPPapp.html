@@ -4,14 +4,13 @@ GPP App
 {% endblock %}
 {% block content %}
 
-
 <main id="main">
   <!-- ======= Breadcrumbs Section ======= -->
   <section class="summary" style="padding-bottom: 0px; "">
     <div class=" container-fluid" style="padding-bottom: 0px; padding-top: 8px;">
 
     <div class="section-title">
-      <h2>GPP Data Portal</span>
+      <h2><span style="color:#94c045;">Carbon</span>Track</span>
       </h2>
     </div>
     <p>The GPP Data Portal, a collaborative effort between the UC Berkeley School of Information
@@ -37,6 +36,7 @@ GPP App
                 <li class="active"><a href="#tab1default" data-toggle="tab">Main</a></li>
                 <li><a href="#tab2default" data-toggle="tab">Model Compare</a></li>
                 <li><a href="#tab3default" data-toggle="tab">Multi Map</a></li>
+                <li><a href="#tab4default" data-toggle="tab">Flux Tower Map</a></li>
                 <li class="dropdown">
                   <a href="#" data-toggle="dropdown">About <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -63,6 +63,13 @@ GPP App
                 <div class="tab-pane fade" id="tab3default">
                   <div id="iframe-container">
                     <iframe id="multimap" src="https://sybilsantosburgan.users.earthengine.app/view/mutimap"></iframe>
+                  </div>
+                </div>
+                <div class="tab-pane active" id="tab4default">
+                  <div id="iframe-container">
+                    <iframe
+                      src="https://www.google.com/maps/d/u/0/embed?mid=1SxC-nTn4K8mchKtA3OcWl-UT2SQbkw8&ehbc=2E312F&amp;zoom=4"
+                      width="640" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="tabAboutdefault1">
@@ -108,6 +115,7 @@ GPP App
         </div>
 
       </div>
+
   </section>
   <!-- End Section -->
 </main><!-- End #main -->
