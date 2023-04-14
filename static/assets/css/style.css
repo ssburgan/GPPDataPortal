@@ -77,7 +77,9 @@ a:hover {
   color: #94c045;
   line-height: 0;
 }
-
+p {
+  font-family: 'Poppins', sans-serif;
+}
 #topbar i span {
   color: #fff;
   font-style: normal;
@@ -924,7 +926,7 @@ section {
 # analyzegpp
 --------------------------------------------------------------*/
 .analyzegpp {
-  background: url(../img/co2/AdobeStock_399613214.jpeg) center center
+  background: url(../img/co2/ferns.jpg) center center
     no-repeat;
   background-size: cover;
   position: relative;
@@ -932,7 +934,7 @@ section {
 
 .analyzegpp::before {
   content: "";
-  background-color: rgba(11, 33, 11, 0.8);
+  background-color: rgba(11, 34, 11, 0.829);
   /*background-color: rgba(12, 11, 10, 0.8);*/
   /*background: rgba(255, 255, 255, 0.0);*/
   position: absolute;
@@ -1021,7 +1023,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/co2/AdobeStock_112755645.jpeg) center center
+  background: url(../img/co2/AdobeStock_112755645.jpg) center center
     no-repeat;
   background-size: cover;
   position: relative;
