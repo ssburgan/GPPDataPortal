@@ -934,7 +934,7 @@ section {
 
 .analyzegpp::before {
   content: "";
-  background-color: rgba(11, 34, 11, 0.829);
+  background-color: rgba(11, 34, 11, 0.96);
   /*background-color: rgba(12, 11, 10, 0.8);*/
   /*background: rgba(255, 255, 255, 0.0);*/
   position: absolute;
