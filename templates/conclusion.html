@@ -20,31 +20,126 @@ Conclusion
     </div>
   </section>
   <!-- End Breadcrumbs Section -->
-
+  
+  
+  <!-- KEY FINDING 1-->
   <section class="summary">
     <div class="container-fluid">
 
-      <div class="row">
+      <div class="row align-items-center flex-wrap-nowrap">
+        <div class="col-lg-5">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../static/assets/img/cedar_2001_2020_yearTrend.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../static/assets/img/modis_2001_2020_yearTrend.png" class="d-block w-100" alt="...">
+              </div>
 
-        <div class="col-lg-5 align-items-stretch video-box"
-          style='background-image: url("../static/assets/img/co2/canopyriver.jpg");'>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
           <div class="content">
             <div class="section-title">
-              <h2><span>Future direction and challenges, Conclusion</span></h2>
+              <h2><span>Yearly Trends</span></h2>
             </div>
-            <p>Write about the story being that Modis is not a direct observation on GPP and there is a missing key
-              element in their estimation (Direct CO2 effects with fertilization) which is why the team built these
-              models. We need to help highlight these key differences in MODIS vs other methods and show that there is
-              not agreement between the two and there is a need for more research/funding
+            <p>Looking at the area around Bolivia, Modis model estimates a large increase in GPP from 2001-2020
+               while the CEDAR ML Model shoes very minimal increase. 
             </p>
 
             <p>
-              Etiam augue eros, fringilla non diam eu, hendrerit consectetur enim. Mauris eleifend orci a volutpat
-              molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
+              Discrepancies such as these are crucial in understanding the work that still needs to be done in this area. 
+              The CEDAR models differ from MODIS as they created models using direct CO2 fertilization effects. 
+              This additional model input clearly estimates GPP differently. With these models just being estimates, 
+              this figure should help further the call to action to continue to build flux towers and obtain more accurate 
+              GPP metrics to improve models such as these.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      
+      <!-- KEY FINDING 2-->
+      <div class="row align-items-center flex-wrap-nowrap" style="padding-top: 50px;">
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2><span>Modis vs CEDAR ML</span></h2>
+            </div>
+            <p>
+              Using CarbonTrack’s model comparison feature, we are able to highlight areas on the map where two models estimate 
+              GPP very differently. With the limited amount of flux towers in the region, it is impossible to know the true GPP 
+              values and thus determine which modeling technique predicts closest to the true value. This helps shine a light on 
+              a big issue in the field - with limited amount of flux towers in the world, GPP modeling and upscaling has a very 
+              low accuracy ceiling. With more flux towers around more diverse regions, the models could be much more performant, 
+              providing researchers with accurate GPP estimates as we continue our fight in climate change.
+            </p>
+
+          </div>
+
+        </div>
+      
+        <div class="col-lg-5">
+          <div id="carouselExample2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../static/assets/img/modis_cedar_2020_brazil.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../static/assets/img/modis_cedar_2020_nepal.png" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- KEY FINDING 3-->
+      <div class="row align-items-center flex-wrap-nowrap" style="padding-top: 50px;">
+
+        <div class="col-lg-5 align-items-stretch video-box"
+          style='background-image: url("../static/assets/img/four_map.png");'>
+        </div>
+
+
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <div class="section-title">
+              <h2><span>Model Comparison Time-series Analysis</span></h2>
+            </div>
+            <p>
+              The figure to the right shows time-series analysis of South America, comparing four 
+              models using the Multi Map functionality. While the three CEDAR model variations show a similar downward trend,
+              the MODIS model shows almost no change in GPP over the 2015 to 2020 time range.
             </p>
 
           </div>
@@ -53,37 +148,95 @@ Conclusion
 
       </div>
 
-      <div class="row">
+      <!-- KEY FINDING 4-->
+      <div class="row align-items-center flex-wrap-nowrap" style="padding-top: 50px;">
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
-        <div class="col-lg-5 align-items-stretch video-box"
-          style='background-image: url("../static/assets/img/co2/canopyriver.jpg");'>
+          <div class="content">
+            <div class="section-title">
+              <h2><span>A Tale of Two Decades</span></h2>
+            </div>
+            <p>
+              CarbonTrack’s Yearly Trend feature helps policy makers see GPP trends in their region overtime. 
+              This figure is showing the differences between 2001-2010 and 2011-2020 which highlights huge 
+              difference we can see in GPP change in just two decades.
+            </p>
+
+          </div>
+
+        </div>
+      
+        <div class="col-lg-5">
+          <div id="carouselExample4" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../static/assets/img/cedar_ml_2001_2010.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../static/assets/img/cedar_ml_2011_2020.png" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+       <!-- KEY FINDING 5-->
+      <div class="row align-items-center flex-wrap-nowrap">
+        <div class="col-lg-5">
+          <div id="carouselExample5" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../static/assets/img/modis_cedar_nile.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../static/assets/img/modis_cedar_amazon.png" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
           <div class="content">
             <div class="section-title">
-              <h2><span>Future direction and challenges, Conclusion</span></h2>
+              <h2><span>Yearly Trends</span></h2>
             </div>
-            <p>Write about the story being that Modis is not a direct observation on GPP and there is a missing key
-              element in their estimation (Direct CO2 effects with fertilization) which is why the team built these
-              models. We need to help highlight these key differences in MODIS vs other methods and show that there is
-              not agreement between the two and there is a need for more research/funding
-            </p>
-
             <p>
-              Etiam augue eros, fringilla non diam eu, hendrerit consectetur enim. Mauris eleifend orci a volutpat
-              molestie. Cras aliquam massa arcu, nec malesuada ipsum ultrices et.
+              The Model Comparison feature again provides a look into how the MODIS’ satellite imagery based 
+              model differs from CEDAR’s model with direct CO2 fertilization effects. The image here shows the 
+              drastic estimation differences around large river sources, the Nile and Amazon rivers. 
             </p>
 
           </div>
 
         </div>
-
       </div>
+      
 
-    </div>
+    </div> 
   </section>
+
+
   <!-- End investigation-processing Section -->
   <section class="summary analyzegpp">
     <div class="container-fluid">
@@ -97,14 +250,12 @@ Conclusion
             </div>
             <div>
               <p style="color:#FFFFFF;padding-bottom:12px; font-size:16px">
-                Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
-                nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
-                laoreet.
-              </p>
-              <p style="color:#FFFFFF; font-size:16px">
-                Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
-                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
-                convallis, feugiat mi id, tincidunt nisl.
+                These examples are just a glimpse at some of the insights which can be gained through the use of 
+                CarbonTrack. While these insights are certainly something to celebrate, we believe that the work is
+                just beginning. The discrepancies between the models is something to take note of and should motivate 
+                more researchers to continue to build more sophisticated GPP models. Additionally, these insights 
+                should motivate climate researchers and policy makers to build more flux towers across the globe to obtain
+                 more accurate GPP measurements so that models can be trained on rich and contextual GPP data.
               </p>
             </div>
           </div>
@@ -154,11 +305,12 @@ Conclusion
               <div class="col-lg-6 pt-4 pt-lg-0 content">
                 <h3>Donec vitae lectus blandit</h3>
                 <p>
-                  Maecenas pharetra, mauris nec iaculis mattis, metus dui interdum quam, eu consequat ipsum lectus eget
-                  nulla. Integer mollis eros nisi, sit amet aliquet metus ornare sit amet. Suspendisse tincidunt luctus
-                  laoreet. Donec vitae lectus blandit, luctus quam non, malesuada tellus. Donec ac gravida arcu. Orci
-                  varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec turpis
-                  convallis, feugiat mi id, tincidunt nisl.
+                  These examples are just a glimpse at some of the insights which can be gained through the use of 
+                  CarbonTrack. While these insights are certainly something to celebrate, we believe that the work is
+                  just beginning. The discrepancies between the models is something to take note of and should motivate 
+                  more researchers to continue to build more sophisticated GPP models. Additionally, these insights 
+                  should motivate climate researchers and policy makers to build more flux towers across the globe to obtain
+                   more accurate GPP measurements so that models can be trained on rich and contextual GPP data.
                 </p>
               </div>
             </div>
