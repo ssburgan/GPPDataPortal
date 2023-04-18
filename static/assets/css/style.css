@@ -934,7 +934,7 @@ section {
 
 .analyzegpp::before {
   content: "";
-  background-color: rgba(11, 34, 11, 0.829);
+  background-color: rgba(11, 34, 11, 0.96);
   /*background-color: rgba(12, 11, 10, 0.8);*/
   /*background: rgba(255, 255, 255, 0.0);*/
   position: absolute;
@@ -1181,9 +1181,9 @@ section {
 }
 
 .team {
-  background: url("../img/co2/canopyriver.jpg") center center
+  /* background: url("../img/co2/canopyriver.jpg") center center
     no-repeat;
-  background-size: cover;
+  background-size: cover; */
   padding: 60px 0;
   position: relative;
 }
@@ -1195,7 +1195,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.717);
   z-index: 9;
 }
 
@@ -1283,6 +1283,8 @@ section {
     background-attachment: fixed;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Book A Table
